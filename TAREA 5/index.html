@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con CSS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="name">Nombre</label>
+                <input id="name" name="nombre" type="text" class="espacio" placeholder="Tu nombre..." required>
+            </div>
+            <div>
+                <label for="apellido">Apellido</label>
+                <input id="apellido" name="apellido" type="text" class="espacio" placeholder="Tu apellido..." required>
+            </div>
+            <div>
+                <label for="pais">Pais</label>
+                <select name="pais" id="pais" class="espacio" required>
+                    <option value="Arg" selected>Argentina</option>
+                    <option value="Bra">Brasil</option>
+                    <option value="Par">Paraguay</option>
+                    <option value="Uru">Uruguay</option>
+                </select>
+            </div>
+            <div class="text-center">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
