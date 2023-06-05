@@ -1,0 +1,205 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(245, 245, 245);
+    margin: 0px;
+}
+header img{
+    max-width: 140px;
+    padding: 20px;
+    float: left;
+}
+header nav{
+    font-family: 'Playfair', serif;
+}
+.menuHeader ul{
+    list-style: none;
+    
+}
+.menuHeader li{
+    float: left;
+    margin-top: 10px;
+}
+.menuHeader li a{
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    color: #262626;
+    font-weight: bold;
+    font-size: 19px;
+}
+.menuHeader li a:hover{
+    color: rgb(21, 133, 148);
+}
+main{
+    width: 70%;
+    background-color: rgba(122, 206, 206, 0.459);
+    clear: both;
+    float: left;
+    height: 100vh; /* fondo completo en altura */
+}
+section{
+    padding: 20px;
+}
+main section{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+main section h2{
+    text-align: center;
+    font-family: 'Playfair', serif;
+    font-size: 30px;
+    color: #262626;
+}
+section .card-product{
+    max-width: 31%;
+    border: 2px solid darkcyan;
+    border-radius: 5px;
+    background-color: white;
+    padding-top: 10px;
+    float: left;
+    margin: 10px;
+    text-align: center;
+}
+section .card-product img{
+    max-width: 90%;
+    border-radius: 5px 5px 0px 0px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(0, 139, 139, 0.637);
+}
+section .card-product .description{
+    text-align: center;
+    line-height: 200%;
+    font-family: 'Playfair', serif;
+    color: gray;
+    font-weight: bold;
+    font-size: 20px;
+}
+section .card-product .precio{
+    text-align: right;
+    font-size: 16px;
+    color: rgb(100, 23, 23);
+    font-weight: bold;
+    letter-spacing: 3px; /* espacio entre letras */
+    padding: 10px;
+}
+section .card-product-footer{
+    width: 100%;
+    background-color: #262626;
+    height: 40px;
+    border-radius: 0px 0px 3px 3px;
+}
+section .card-product-footer button{
+    width: 50%;
+    float: left;
+    height: 40px;    
+    background-color: #262626;
+    border-radius: 0px 0px 5px 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+section .card-product-footer button:hover{
+    color: black;
+    background-color: #081f66;
+    color: white;
+    font-weight: bold;
+}
+aside{
+    width: 30%;
+    background-color: #385da0;
+    padding: 20px;
+    float: left;
+    height: 100vh;
+}
+aside section nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+aside section nav li{
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+}
+aside section nav a{
+    font-family: 'Playfair', serif;
+    text-decoration: none;
+    font-size: 22px;
+    padding-bottom: 10px;
+    color: white;
+}
+aside section nav a:hover{
+    color: #a5cab9;
+}
+aside section nav li:hover{
+    border-bottom: 1px solid #a5cab9;
+    margin-bottom: 10px;
+}
+aside .form{
+    width: 100%;
+    border: 2px solid #b9b9b9;
+    border-radius: 5px;
+    padding: 5px;
+}
+aside h3{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    font-family: 'Playfair', serif;
+    font-size: 25px;
+    color: white;
+}
+aside .form input, aside .form textarea{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+aside .form textarea{
+    height: 100px!important;
+}
+aside .form button{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: #262626;
+    color: white;
+    border-radius: 5px;
+}
+aside .form button:hover{
+    background-color: #081f66;
+}
+footer{
+    clear: both; /* limpiamos por el float */
+    padding: 60px;
+    background-color: #262626;
+    color: white;
+}
+footer div{
+    width: 50%;
+    float: left;
+}
+footer .one{
+    float: left;
+}
+footer .two{
+    float: right;
+    text-align: right;
+}
+footer .two a{
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+}
