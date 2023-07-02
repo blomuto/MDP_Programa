@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de ropa</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+  <div class="flotante">
+    <div class="py-2">
+      <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+      <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+    </div>
+  </div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary titulos">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/quiksilver-logo-2.png" width="100%" alt="logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                PRODUCTOS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ILUSTRADORES
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                COLECCIONES
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="#">SOBRE NOSOTROS</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+            
+          </ul>
+          <button class="btn btn-outline-success">Carrito / $0 <i class="fa-solid fa-cart-shopping"></i> </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container-fluid d-flex justify-content-center">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 p-0 m-0">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/cuadrada1.png" class="d-block w-100 prueba" alt="banner">
+              <div class="carousel-caption d-none d-md-block">
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Ver mas
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/cuadrada2.png" class="d-block w-100 prueba" alt="banner">
+              <div class="carousel-caption d-none d-md-block">
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Ver mas
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/cuadrada3.jpg" class="d-block w-100 prueba" alt="banner">
+              <div class="carousel-caption d-none d-md-block">
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Ver mas
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="col-lg-6 col-md-6 col-sm-12 p-0 m-0 galeria">
+        <div class="thumb">
+          <img src="./img/01.jpg" alt="imagen" width="100%" class="img-galeria">
+          <div class="icon">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Ver mas
+            </button>
+          </div>
+        </div>
+        <div class="thumb">
+          <img src="./img/02.jpg" alt="imagen" width="100%" class="img-galeria">
+          <div class="icon">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Ver mas
+            </button>
+          </div>
+        </div>
+        <div class="thumb">
+          <img src="./img/03.jpg" alt="imagen" width="100%" class="img-galeria">
+          <div class="icon">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Ver mas
+            </button>
+          </div>
+        </div>
+        <div class="thumb">
+          <img src="./img/04.jpg" alt="imagen" width="100%" class="img-galeria">
+          <div class="icon">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Ver mas
+            </button>
+          </div>
+        </div>
+        <div class="thumb">
+          <img src="./img/05.jpg" alt="imagen" width="100%" class="img-galeria">
+          <div class="icon">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Ver mas
+            </button>
+          </div>
+        </div>
+        <div class="thumb">
+          <img src="./img/06.jpg" alt="imagen" width="100%" class="img-galeria">
+          <div class="icon">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Ver mas
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body container">
+          <div class="row">
+            <div class="col-4">
+              <img src="./img/01.jpg" alt="imagen" width="100%">
+            </div>
+            <div class="col-8">
+              <h4 class="titulos">Traje de Baño Highline Kaimana 16 (Azul) Quiksilver</h4>
+              <p class="p-0 m-0">TELA: 93% Poliéster, 7% Elastano</p>
+              <p class="p-0 m-0">- Boardshort</p>
+              <p class="p-0 m-0">- Tela: 4 Way Stretch Liso</p>
+              <p class="p-0 m-0">- Cintura interna melange a contra tono</p>
+              <p class="p-0 m-0">- Outseam: 16”</p>
+              <p class="p-0 m-0">- Performance fit</p>
+              <p class="p-0 m-0">- Bolsillo trasero</p>
+              <p class="p-0 m-0">- Cordón dentro del bolsillo</p>
+              <h5 class="titulos pt-2 pb-0 m-0">Colores</h5>
+              <div class="color">
+                <ul class="pt-1 px-0 m-0">
+                    <li class="negro"></li>
+                    <li class="azul"></li>
+                    <li class="rojo"></li>
+                </ul>
+              </div>
+              <h5 class="titulos pt-2 pb-0 m-0">Talles</h5>
+              <p class="p-0 m-0">XS - S - M - L - XL</p>
+              <h5 class="titulos pt-2 pb-0 m-0">Precio</h5>
+              <p class="pb-2 m-0">$5000</p>
+              <button class="btn btn-success">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i> </button>
+              <i class="fa-regular fa-heart px-2 corazon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="container py-5">
+    <div class="row">
+      <div class="col-lg-4 text-center">
+        <i class="fa-solid fa-leaf"></i>
+        <h3 class="titulos">ECO-FRIENDLY</h3>
+        <p>Nuestros productos son 100% amigables con el medio ambiente, porque reciclamos ropa y utilizamos tintas ecológicas.</p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <i class="fa-regular fa-credit-card"></i>
+        <h3 class="titulos">FORMAS DE PAGO</h3>
+        <p>Podés pagar con tu tarjeta de crédito / débito, mediante transferencia bancaria, depósito o MercadoPago.</p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <i class="fa-solid fa-shirt"></i>
+        <h3 class="titulos">SERIGRAFÍA ARTESANAL</h3>
+        <p>Nuestra serigrafía es totalmente artesanal, un oficio adquirido fundamentalmente a través de la experiencia y la especialización.</p>
+      </div>
+    </div>
+  </main>
+
+  <section class="py-3">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-3 col-sm-2">
+          <hr class="border-2">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-8 text-center">
+          <h3 class="titulos">REVISÁ NUESTROS ÚLTIMOS PRODUCTOS</h3>
+        </div>
+        <div class="col-lg-4 col-md-3 col-sm-2">
+          <hr class="border-2">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-2 col-md-2 col-sm-4 px-1">
+          <div class="thumb">
+            <div class="icon">
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Ver mas
+              </button>
+            </div>
+            <img src="./img/07.jpg" alt="imagen" width="100%" class="py-2">
+          </div>
+            <h4 class="titulos m-0">Boardshort</h4>
+          <p class="p-0 m-0">$5.000</p>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 px-1">
+          <div class="thumb">
+            <div class="icon">
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Ver mas
+              </button>
+            </div>
+            <img src="./img/08.jpg" alt="imagen" width="100%" class="py-2">
+          </div>
+            <h4 class="titulos m-0">Remera</h4>
+          <p class="p-0 m-0">$4.000</p>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 px-1">
+          <div class="thumb">
+            <div class="icon">
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Ver mas
+              </button>
+            </div>
+            <img src="./img/09.jpg" alt="imagen" width="100%" class="py-2">
+          </div>
+            <h4 class="titulos m-0">Buzo</h4>
+          <p class="p-0 m-0">$9.000</p>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 px-1">
+          <div class="thumb">
+            <div class="icon">
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Ver mas
+              </button>
+            </div>
+            <img src="./img/10.jpg" alt="imagen" width="100%" class="py-2">
+          </div>
+            <h4 class="titulos m-0">Boardshort</h4>
+          <p class="p-0 m-0">$4.500</p>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 px-1">
+          <div class="thumb">
+            <div class="icon">
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Ver mas
+              </button>
+            </div>
+            <img src="./img/07.jpg" alt="imagen" width="100%" class="py-2">
+          </div>
+            <h4 class="titulos m-0">Boardshort</h4>
+          <p class="p-0 m-0">$5.000</p>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 px-1">
+          <div class="thumb">
+            <div class="icon">
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Ver mas
+              </button>
+            </div>
+            <img src="./img/08.jpg" alt="imagen" width="100%" class="py-2">
+          </div>
+            <h4 class="titulos m-0">Remera</h4>
+          <p class="p-0 m-0">$6.000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-3">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-3 col-sm-2">
+          <hr class="border-2">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-8 text-center">
+          <h3 class="titulos">SEGUINOS EN INSTAGRAM!</h3>
+        </div>
+        <div class="col-lg-4 col-md-3 col-sm-2">
+          <hr class="border-2">
+        </div>
+      </div>
+    </div>
+    <div class="container py-3">
+      <div class="row text-center d-flex justify-content-center py-1">
+        <div class="col-lg-4 col-md-4 col-sm-12 bg-danger text-white me-3 py-1">
+          <img src="./img/logo-2.jpg" alt="logo" width="100%" class="logo-red py-4">
+          <h5 class="pb-3">@quiksilverargentina</h5>
+          <button type="button" class="btn btn-light">Seguir</button>
+          <h4 class="titulos pt-4">Quiksilver Argentina</h4>
+          <p class="pb-2">La montaña y la ola, desde ‘1969 #QuiksilverArgentina #QuikSurf #QuikSnow</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 p-0 m-0 galeria-2" >
+          <div>
+            <img src="./img/13.jpg" alt="imagen" width="100%">
+          </div>
+          <div>
+            <img src="./img/14.jpg" alt="imagen" width="100%">
+          </div>
+          <div>
+            <img src="./img/15.jpg" alt="imagen" width="100%">
+          </div>
+          <div>
+            <img src="./img/14.jpg" alt="imagen" width="100%">
+          </div>
+          <div>
+            <img src="./img/15.jpg" alt="imagen" width="100%">
+          </div>
+          <div>
+            <img src="./img/13.jpg" alt="imagen" width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="pt-3 pb-1">
+      <div class="py-2">
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+      </div>
+    </div>
+    <div class="links-footer text-center">
+      <div class="titulos">
+        <h5 class="py-1 px-2 m-0"><a href="#">SOBRE LA TIENDA</a></h5>
+      </div>
+      <div class="titulos">
+        <h5 class="py-1 px-2 m-0"><a href="#">FORMAS DE ENTREGA</a></h5>
+      </div>
+      <div class="titulos">
+        <h5 class="py-1 px-2 m-0"><a href="#">PREGUNTAS FRECUENTES</a></h5>
+      </div>
+      <div class="titulos">
+        <h5 class="py-1 px-2 m-0"><a href="#">TÉRMINOS Y CONDICIONES</a></h5>
+      </div>     
+    </div>
+    <p class="text-white py-3 m-0 titulos">Realizado por Belén Lomuto - 2023</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
