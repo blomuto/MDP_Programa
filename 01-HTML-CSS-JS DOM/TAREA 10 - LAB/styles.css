@@ -1,0 +1,33 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+.cuadro1{
+    width: 100%;
+    height: 200px;
+    background-color: red;
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+}
+.eldisplay{
+    display: flex;
+}
+.eldisplay section{
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+}
+.cuadro2, .cuadro3{
+    background-color: red;
+    height: 200px;
+    width: 97%;
+    padding: 20px;
+    margin: 10px 0px 10px 10px;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+button{
+    margin: 5px;
+}
