@@ -36,7 +36,7 @@ if (xx>0){
 let zz = prompt("ingrese el valor a dividir: ");
 if (zz>0){
     for(i=1; i<=10; i++){
-        console.log(zz, "/" ,i, "=", zz/i);
+        console.log((zz*i), "/" ,zz, "=", ((zz*i)/zz));
     }
 } else{
     console.log("Ingrese numero mayor a 1");
