@@ -2,9 +2,9 @@
 const prompt=require("prompt-sync")({sigint:true});
 
 // dado 3 valores ingresados por el usuario, saber cual es el mayor de ellos
-let nn1 = prompt("ingrese el valor del num 1: ");
-let nn2 = prompt("ingrese el valor del num 2: ");
-let nn3 = prompt("ingrese el valor del num 3: ");
+let nn1 = parseInt(prompt("ingrese el valor del num 1: ")); /* parseo a numero */
+let nn2 = parseInt(prompt("ingrese el valor del num 2: "));
+let nn3 = parseInt(prompt("ingrese el valor del num 3: "));
 
 if( !(Number(nn1)) || !(Number(nn2)) || !(Number(nn3)) ){ /* niego: "si no es numerico" */
     console.log("Por favor, ingrese solo numeros");
@@ -36,7 +36,7 @@ if (xx>0){
 let zz = prompt("ingrese el valor a dividir: ");
 if (zz>0){
     for(i=1; i<=10; i++){
-        console.log((zz*i), "/" ,zz, "=", ((zz*i)/zz));
+        console.log((zz*i), "/" ,zz, "=", i);
     }
 } else{
     console.log("Ingrese numero mayor a 1");
