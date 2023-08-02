@@ -38,7 +38,7 @@ addPerson("Karina", "Estevez", 20, "Vidal", 1, true);
 let ingresa = prompt("Ingrese nombre que quiere buscar: ");
 
 let dataPersonaFilter=arrayPersonas.filter((persona)=>{ 
-    return (persona.firstName == ingresa); 
+    return (persona.firstName.toLowerCase() == ingresa || persona.firstName.toUpperCase() == ingresa); 
 });
 console.log("*********** FILTRO POR NOMBRE **************");
 console.log(dataPersonaFilter); 
@@ -47,7 +47,7 @@ console.log(dataPersonaFilter);
 let letra = prompt("Ingrese letra en los nombres que quiere buscar: ");
 
 let dataPersonaFilterLetra=arrayPersonas.filter((persona)=>{ 
-    return (persona.firstName.includes(letra)); 
+    return (persona.firstName.toLowerCase().includes(letra) || persona.firstName.toUpperCase().includes(letra)); 
 });
 console.log("*********** FILTRO POR LETRA EN EL NOMBRE **************");
 console.log(dataPersonaFilterLetra); 
