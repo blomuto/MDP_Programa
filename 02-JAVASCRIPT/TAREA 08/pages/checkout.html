@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de ropa</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.21/dist/sweetalert2.min.css">
+</head>
+<body>
+  <div class="flotante">
+    <div class="py-2">
+      <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+      <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+    </div>
+  </div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary titulos">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/quiksilver-logo-2.png" width="100%" alt="logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                PRODUCTOS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ILUSTRADORES
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                COLECCIONES
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="#">SOBRE NOSOTROS</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+            
+          </ul>
+          <a href="#" class="btn btn-outline-success">Mi Carrito <i class="fa-solid fa-cart-shopping"></i> </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="py-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3 class="titulos">MI CARRITO</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container py-2">
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-hover">
+                    <thead class="table-secondary">
+                      <tr>
+                        <th scope="col">PRODUCTO</th>
+                        <th scope="col">PRECIO</th>
+                        <th scope="col">CANTIDAD</th>
+                        <th scope="col">TOTAL</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody id="listProducto"> <!-- aca se agrega mi list -->
+                        <tr><td colspan="5" class="text-center">TU CARRITO ESTÁ VACÍO</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row py-4">
+            <div class="col-6">
+                <h5 class="titulos">ENTREGA</h5>
+                <div>	
+                  <input type="radio" name="entrega" value="sucursal" id="sucursal" checked required>
+                  <label for="sucursal">Retiro en sucursal <strong>¡Gratis!</strong></label>
+                </div>
+                <div>	
+                  <input type="radio" name="entrega" value="envio-domicilio" id="envio-domicilio">
+                  <label for="envio-domicilio">Envío a domicilio por OCA</label>
+                </div>
+                <div>	
+                  <input type="radio" name="entrega" value="envio-oca" id="envio-oca">
+                  <label for="envio-oca">Envío a casa central OCA</label>
+                </div>
+            </div>
+            <div class="col-6">
+              <h5 class="titulos">DETALLE DE COMPRA</h5>
+              <table class="table">
+                <tbody id="listProductoDos"> <!-- aca se agrega mi list 2-->
+                    <tr><td class="text-center">TU CARRITO ESTÁ VACÍO</td></tr>
+                </tbody>
+              </table>
+              <div class="text-center pt-2">
+                <a href="../index.html" class="btn btn-outline-primary">Elegir más productos</a>
+                <!-- <button type="button" class="btn btn-warning">ACTUALIZAR CARRITO</button> -->
+                <button type="button" class="btn btn-success">FINALIZAR COMPRA</button>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+  <footer>
+    <div class="pt-3 pb-1">
+      <div class="py-2">
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+      </div>
+    </div>
+    <div class="links-footer text-center">
+      <div class="titulos">
+        <h5 class="py-1 px-2 m-0"><a href="#">SOBRE LA TIENDA</a></h5>
+      </div>
+      <div class="titulos">
+        <h5 class="py-1 px-2 m-0"><a href="#">FORMAS DE ENTREGA</a></h5>
+      </div>
+      <div class="titulos">
+        <h5 class="py-1 px-2 m-0"><a href="#">PREGUNTAS FRECUENTES</a></h5>
+      </div>
+      <div class="titulos">
+        <h5 class="py-1 px-2 m-0"><a href="#">TÉRMINOS Y CONDICIONES</a></h5>
+      </div>     
+    </div>
+    <p class="text-white py-3 m-0 titulos">Realizado por Belén Lomuto - 2023</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.21/dist/sweetalert2.all.min.js"></script> 
+  <script src="../js/index.js"></script>
+</body>
+</html>
